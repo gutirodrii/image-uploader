@@ -1,5 +1,5 @@
 import React from "react";
-import { fonts } from "../app/layout";
+import { fonts } from "../fonts";
 
 const Uploading = () => {
   return (

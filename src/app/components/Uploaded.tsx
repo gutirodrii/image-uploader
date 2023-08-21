@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import { fonts } from "../app/layout"; 
+import { fonts } from "../fonts"; 
 const Uploaded = () => {
   return (
     <div className="flex justify-center items-center h-screen">

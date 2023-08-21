@@ -1,10 +1,10 @@
-"use client";
+"use client"
 import Image from "next/image";
-import RootLayout, { fonts } from "./layout";
+import { fonts } from "./fonts";
 import { useState } from "react";
-import Uploader from "@/components/Uploader";
-import Uploading from "@/components/Uploading";
-import Uploaded from "@/components/Uploaded";
+import Uploader from "@/app/components/Uploader";
+import Uploading from "@/app/components/Uploading";
+import Uploaded from "@/app/components/Uploaded";
 
 export default function Home() {
   const [view, setView] = useState<number>(0);
@@ -13,7 +13,6 @@ export default function Home() {
     setView(view === 2 ? 0 : view + 1);
   };
   return (
-    <RootLayout>
       <main className="min-h-screen">
         <div className="absolute top-3 inset-x-0 flex justify-center">
           <button
@@ -39,6 +38,5 @@ export default function Home() {
           </div>
         </footer>
       </main>
-    </RootLayout>
   );
 }
